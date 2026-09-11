@@ -399,6 +399,16 @@
     #about .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 2rem; }
     .hero-stats { gap: 1.5rem; }
   }
+  @media (max-width: 480px) {
+    .section-inner { padding: 3.5rem 1.25rem; }
+    #hero { padding: 5rem 1.25rem 3rem; }
+    .hero-buttons { flex-direction: column; width: 100%; }
+    .hero-buttons a { width: 100%; text-align: center; }
+    .hero-stats { gap: 1rem 1.5rem; }
+    .stat-num { font-size: 1.6rem; }
+    .about-card, .contact-form { padding: 1.5rem; }
+    .project-card { padding: 1.4rem; }
+  }
 </style>
 </head>
 <body>
@@ -410,7 +420,6 @@
 
 <!-- Nav -->
 <nav>
-  <a class="nav-logo" href="#hero">PPR</a>
   <ul class="nav-links" id="navLinks">
     <li><a href="#about">About</a></li>
     <li><a href="#skills">Skills</a></li>
@@ -436,18 +445,18 @@
     <span id="typewriter"></span><span class="typewriter-cursor">|</span>
   </div>
   <p class="hero-sub">
-    Final-year CS & Design student at MVJCE building clean, efficient Java applications.
-    Currently interning at Tap Academy, solving real problems with backend fundamentals.
+    Computer Science &amp; Design graduate from MVJCE with hands-on experience across backend Java development and geospatial AI/ML workflows.
+    Most recently worked on GeoAI pipelines at Q-Gate Infotech; previously interned at Tap Academy building Java applications.
   </p>
   <div class="hero-buttons">
-    <a class="btn-primary" href="#projects">View My Work</a>
+    <a class="btn-primary" href="https://linkedin.com/in/poornimapr" target="_blank" rel="noopener">LinkedIn</a>
     <a class="btn-secondary" href="https://github.com/poornimapr" target="_blank" rel="noopener">GitHub Profile</a>
   </div>
   <div class="hero-stats">
-    <div class="stat"><div class="stat-num" data-target="7.8" data-decimal="1">0</div><div class="stat-label">CGPA</div></div>
+    <div class="stat"><div class="stat-num" data-target="8" data-decimal="0">0</div><div class="stat-label">CGPA</div></div>
     <div class="stat"><div class="stat-num" data-target="3">0</div><div class="stat-label">Projects Built</div></div>
     <div class="stat"><div class="stat-num" data-target="2">0</div><div class="stat-label">Certifications</div></div>
-    <div class="stat"><div class="stat-num" data-target="10">0</div><div class="stat-label">Bugs Squashed</div></div>
+    <div class="stat"><div class="stat-num" data-target="400" data-suffix="+">0</div><div class="stat-label">Problems Solved</div></div>
   </div>
   <div class="hero-scroll">
     <div class="scroll-line"></div>
@@ -464,9 +473,9 @@
       <div class="about-text">
         <div class="section-tag">About Me</div>
         <h2 class="section-title">Building backends,<br>solving problems.</h2>
-        <p>I'm a final-year Computer Science and Design student at MVJCE (CGPA: 7.8) with a deep interest in backend development and software architecture.</p>
-        <p>Currently interning at <strong style="color: var(--accent)">Tap Academy</strong>, I build modular Java applications and sharpen my DSA skills daily. I believe clean code and strong fundamentals are the foundation of every great product.</p>
-        <p>When I'm not coding, I'm exploring how design thinking improves developer experience.</p>
+        <p>I'm a Computer Science and Design graduate from MVJCE (CGPA: 8) with a deep interest in backend development, software architecture, and geospatial AI/ML.</p>
+        <p>Most recently, I worked at <strong style="color: var(--accent)">Q-Gate Infotech</strong> on geospatial data processing and AI/ML-based GeoAI workflows using Python and QGIS. Before that, I interned at <strong style="color: var(--accent)">Tap Academy</strong>, building modular Java applications and sharpening my DSA skills — solving 400+ coding problems along the way.</p>
+        <p>I believe clean code and strong fundamentals are the foundation of every great product, and I love exploring how design thinking improves developer experience.</p>
         <div class="about-info">
           <div class="about-info-row"><span class="about-info-label">Email</span><span class="about-info-val"><a href="mailto:iampoornima04@gmail.com">iampoornima04@gmail.com</a></span></div>
           <div class="about-info-row"><span class="about-info-label">Phone</span><span class="about-info-val">+91 6363944844</span></div>
@@ -481,7 +490,7 @@
           <div class="edu-degree">B.E – Computer Science and Design</div>
           <div class="edu-school">MVJ College Of Engineering</div>
           <div class="edu-meta"><span>Dec 2022 – Jun 2026</span></div>
-          <span class="edu-badge">CGPA: 7.8</span>
+          <span class="edu-badge">CGPA: 8</span>
         </div>
         <div class="education-item">
           <div class="edu-degree">Pre-University Course – PCMB</div>
@@ -516,11 +525,11 @@
           <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="85"></div></div>
         </div>
         <div class="skill-item">
-          <div class="skill-name-row"><span>Python</span><span class="skill-pct">70%</span></div>
-          <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="70"></div></div>
+          <div class="skill-name-row"><span>Python</span><span class="skill-pct">75%</span></div>
+          <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="75"></div></div>
         </div>
         <div class="skill-item">
-          <div class="skill-name-row"><span>HTML5 / CSS3</span><span class="skill-pct">75%</span></div>
+          <div class="skill-name-row"><span>HTML5 / CSS3 / JavaScript</span><span class="skill-pct">75%</span></div>
           <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="75"></div></div>
         </div>
       </div>
@@ -547,11 +556,16 @@
           <span class="skill-tag">VS Code</span>
           <span class="skill-tag">Figma</span>
           <span class="skill-tag">MySQL</span>
+          <span class="skill-tag">QGIS</span>
           <span class="skill-tag">Operating Systems</span>
         </div>
         <div style="margin-top: 1rem;">
-          <div class="skill-card-title" style="margin-bottom: 0.5rem">Familiar With</div>
+          <div class="skill-card-title" style="margin-bottom: 0.5rem">Frameworks &amp; AI/ML</div>
           <div class="skill-tags">
+            <span class="skill-tag">Flask</span>
+            <span class="skill-tag">Spring</span>
+            <span class="skill-tag">NLP</span>
+            <span class="skill-tag">RAG</span>
             <span class="skill-tag" style="opacity:0.6">C++</span>
           </div>
         </div>
@@ -573,22 +587,44 @@
         <div class="timeline-dot"></div>
         <div class="timeline-header">
           <div>
+            <div class="timeline-role">Trainee (Contract)</div>
+            <div class="timeline-company">Q-Gate Infotech · Bangalore, India</div>
+          </div>
+          <div class="timeline-date">Jun 2026 – Aug 2026</div>
+        </div>
+        <div class="timeline-tech">
+          <span class="tech-chip">Python</span>
+          <span class="tech-chip">QGIS</span>
+          <span class="tech-chip">GIS</span>
+          <span class="tech-chip">AI/ML</span>
+        </div>
+        <ul class="timeline-bullets">
+          <li>Worked on geospatial data processing, spatial analysis, and AI/ML-based GeoAI workflows using Python and QGIS.</li>
+          <li>Assisted with data preparation and validation for GIS and remote-sensing applications.</li>
+        </ul>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-header">
+          <div>
             <div class="timeline-role">Software Development Intern</div>
             <div class="timeline-company">Tap Academy · Bangalore, India</div>
           </div>
-          <div class="timeline-date">Jan 2026 – Present</div>
+          <div class="timeline-date">Jan 2026 – Jun 2026</div>
         </div>
         <div class="timeline-tech">
           <span class="tech-chip">Java</span>
-          <span class="tech-chip">DSA</span>
-          <span class="tech-chip">OOP</span>
-          <span class="tech-chip">VS Code</span>
-          <span class="tech-chip">Web Development</span>
+          <span class="tech-chip">Python</span>
+          <span class="tech-chip">HTML5</span>
+          <span class="tech-chip">CSS3</span>
+          <span class="tech-chip">JavaScript</span>
+          <span class="tech-chip">Spring</span>
+          <span class="tech-chip">MySQL</span>
         </div>
         <ul class="timeline-bullets">
-          <li>Built modular backend components in Core Java using OOP principles (Inheritance, Encapsulation, Polymorphism), reducing code redundancy across 3+ application modules.</li>
-          <li>Improved algorithm efficiency by applying appropriate data structures (HashMap, LinkedList, Stack), cutting average problem-solving time during code reviews.</li>
-          <li>Identified and resolved 10+ logic bugs through systematic debugging using VS Code, improving application stability during development cycles.</li>
+          <li>Completed training in Java, Python, HTML5, CSS3, JavaScript, Spring and MySQL.</li>
+          <li>Solved 400+ coding questions using Java and Data Structures &amp; Algorithms (DSA), strengthening problem-solving skills.</li>
+          <li>Gained hands-on knowledge of OOP, web development, database management, and backend development.</li>
         </ul>
       </div>
     </div>
@@ -621,6 +657,21 @@
       </div>
 
       <div class="project-card">
+        <div class="project-icon coral">🤖</div>
+        <div class="project-title">RAG-Based AI Teaching Assistant</div>
+        <div class="project-desc">A Retrieval-Augmented Generation assistant that retrieves relevant information from educational content to provide accurate, context-aware answers.</div>
+        <div class="project-tech">
+          <span class="tech-chip">Python</span>
+          <span class="tech-chip">NLP</span>
+          <span class="tech-chip">Flask</span>
+          <span class="tech-chip">RAG</span>
+        </div>
+        <div class="project-links">
+          <a class="project-link primary" href="https://github.com/poornimapr/rag-teaching-assistant" target="_blank" rel="noopener">⌥ GitHub</a>
+        </div>
+      </div>
+
+      <div class="project-card">
         <div class="project-icon teal">🌐</div>
         <div class="project-title">Personal Portfolio Website</div>
         <div class="project-desc">A fully responsive personal portfolio built with HTML5 and CSS3, optimised for desktop and mobile with semantic HTML for better SEO and recruiter navigation.</div>
@@ -628,9 +679,6 @@
           <span class="tech-chip">HTML5</span>
           <span class="tech-chip">CSS3</span>
           <span class="tech-chip">Responsive Design</span>
-        </div>
-        <div class="project-links">
-          <a class="project-link primary" href="https://github.com/poornimapr/portfolio" target="_blank" rel="noopener">⌥ GitHub</a>
         </div>
       </div>
 
@@ -648,19 +696,19 @@
     <p class="section-sub" style="margin-bottom: 2rem">Verified learning that complements hands-on experience.</p>
     <div class="cert-grid">
       <div class="cert-card">
+        <div class="cert-icon">🌐</div>
+        <div>
+          <div class="cert-title">Full Stack Web Development</div>
+          <div class="cert-issuer">TAP Academy</div>
+          <div class="cert-date">Aug 2026</div>
+        </div>
+      </div>
+      <div class="cert-card">
         <div class="cert-icon">☕</div>
         <div>
           <div class="cert-title">Java Programming</div>
           <div class="cert-issuer">IIT Bombay – Spoken Tutorial</div>
-          <div class="cert-date">Dec 2025</div>
-        </div>
-      </div>
-      <div class="cert-card">
-        <div class="cert-icon">🐍</div>
-        <div>
-          <div class="cert-title">Python for Beginners</div>
-          <div class="cert-issuer">Udemy</div>
-          <div class="cert-date">May 2025</div>
+          <div class="cert-date">Dec 2026</div>
         </div>
       </div>
     </div>
@@ -674,7 +722,7 @@
   <div class="section-inner">
     <div class="section-tag">Contact</div>
     <h2 class="section-title">Let's connect</h2>
-    <p class="section-sub">Open to SDE internships and full-time roles from mid-2026.</p>
+    <p class="section-sub">Open to SDE internships and full-time roles.</p>
     <div class="contact-grid">
       <div class="contact-info">
         <a class="contact-link-card" href="mailto:iampoornima04@gmail.com">
@@ -757,7 +805,7 @@ window.addEventListener('scroll', () => {
 });
 
 // Typewriter
-const roles = ['Software Developer', 'Backend Engineer', 'Java Developer', 'Problem Solver', 'CS & Design Student'];
+const roles = ['Software Developer', 'Backend Engineer', 'Java Developer', 'GeoAI Enthusiast', 'Problem Solver'];
 let ri = 0, ci = 0, del = false;
 const tw = document.getElementById('typewriter');
 function type() {
